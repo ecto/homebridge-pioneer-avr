@@ -317,7 +317,7 @@ PioneerAvr.prototype.sendCommand = async function(command, callback) {
                 this.initCount,
                 Object.keys(inputToType).length
                 );
-            if (this.initCount == Object.keys(inputToType).length) this.isReady = true;
+            if (this.initCount == 31) this.isReady = true;
         }
         callback(this.inputs.length-1);
     }
